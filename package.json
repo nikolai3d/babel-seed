@@ -7,11 +7,8 @@
     "url": "https://github.com/nikolai3d/babel-seed"
   },
   "keywords": [
-    "ntp",
-    "node",
-    "time",
-    "delta",
-    "milliseconds"
+      "babel",
+      "ecmaScript6"
   ],
   "author": "Nikolai Svakhin <svakhine@adobe.com> (https://twitter.com/Nikolai3d)",
   "license": "ISC",
