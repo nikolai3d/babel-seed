@@ -1,0 +1,30 @@
+{
+  "name": "babel-seed",
+  "version": "1.0.0",
+  "description": "Seed project with babel and eslint set up, transpiling all in sources-es6 folder to sources-js folder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikolai3d/babel-seed"
+  },
+  "keywords": [
+    "ntp",
+    "node",
+    "time",
+    "delta",
+    "milliseconds"
+  ],
+  "author": "Nikolai Svakhin <svakhine@adobe.com> (https://twitter.com/Nikolai3d)",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0",
+    "eslint": "^2.7.0",
+    "eslint-config-google": "^0.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-print": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "merge-stream": "^1.0.0"
+  }
+}
