@@ -40,7 +40,13 @@ gulp_ok=$?;
 
 if  [ "$node_ok" = "0" ] && [ "$npm_ok" = "0" ] && [ "$gulp_ok" = "0" ]
 then
-    echo "HURRAY!"
+nodeversion=$(node --version);
+    echo "Node.JS version: \"$nodeversion\"";
+npmversion=$(npm --version);
+    echo "NPM version: \"$npmversion\"";
+gulpversion=$(gulp --version);
+    echo "GULP version: \"$gulpversion\"";
+
 fi
 
 # command -v nodex >/dev/null 2>&1;
