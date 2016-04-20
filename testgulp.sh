@@ -38,6 +38,13 @@ npm_ok=$?;
 commandCheck "gulp" "I require GULP but it's not installed.\n - Please type 'sudo npm install gulp --global' and try again.\n - (On WINDOWS, type 'npm install gulp --global' in any terminal ran by Administrator, and try again )";
 gulp_ok=$?;
 
+commandCheck "browserify" "I require BROWSERIFY but it's not installed.\n - Please type 'sudo npm install browserify --global' and try again.\n - (On WINDOWS, type 'npm install browserify --global' in any terminal ran by Administrator, and try again )";
+browserify_ok=$?;
+
+commandCheck "babel" "I require BABEL but it's not installed.\n - Please type 'sudo npm install babel-cli --global' and try again.\n - (On WINDOWS, type 'npm install babel-cli --global' in any terminal ran by Administrator, and try again )";
+
+
+
 if  [ "$node_ok" = "0" ] && [ "$npm_ok" = "0" ] && [ "$gulp_ok" = "0" ]
 then
 nodeversion=$(node --version);
@@ -46,31 +53,8 @@ npmversion=$(npm --version);
     echo "NPM version: \"$npmversion\"";
 gulpversion=$(gulp --version);
     echo "GULP version: \"$gulpversion\"";
-
+browserify_version=$(browserify --version);
+    echo "BROWSERIFY version: \"$browserify_version\"";
+babel_version=$(babel --version);
+    echo "BABEL version: \"$babel_version\"";
 fi
-
-# command -v nodex >/dev/null 2>&1;
-# node_ok=$?;
-# echo $node_ok;
-# if [ "$node_ok" -ne "0" ]
-# then
-#     echo >&2 "I require NODE.JS but it's not installed.\n - Please head to https://nodejs.org/ and install the latest LTS (Long-Term Support) version."
-# fi
-#
-#
-# command -v npmx >/dev/null 2>&1;
-# npm_ok=$?;
-# echo $npm_ok;
-# if [ "$npm_ok" -ne "0" ]
-# then
-#     echo >&2 "I require NPM but it's not installed.\n - Please head to https://nodejs.org/ and install/reinstall the latest LTS (Long-Term Support) version."
-# fi
-#
-# command -v gulpx >/dev/null 2>&1;
-# gulp_ok=$?;
-# echo $gulp_ok;
-# if [ "$gulp_ok" -ne "0" ]
-# then
-#     echo >&2 "I require GULP but it's not installed.\n - Please type 'sudo npm install gulp --global' and try again."
-#     echo >&2 "- (On WINDOWS, type 'npm install gulp --global' in any terminal ran by Administrator, and try again )"
-# fi
