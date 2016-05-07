@@ -2,10 +2,12 @@
 
 # Installation
 
-Requires **gulp** to be installed. To install and test run:
+Requires **gulp/browserify/babel** to be installed. To install and test run:
 
 ```
-$ sudo npm install --global gulp
+$ sudo npm install gulp --global 
+$ sudo npm install browserify --global
+$ sudo npm install babel-cli --global
 $ npm install
 $ gulp babel
 ```
