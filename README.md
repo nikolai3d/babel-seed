@@ -2,6 +2,8 @@
 
 # Installation
 
+Use `$ sh testgulp.sh` to verify that you have the tools you need, and to have their latest versions.
+
 Requires **gulp/browserify/babel** to be installed. To install and test run:
 
 ```
